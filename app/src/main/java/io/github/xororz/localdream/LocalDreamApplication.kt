@@ -6,6 +6,7 @@ import io.github.xororz.localdream.data.HistoryMigration
 import io.github.xororz.localdream.data.MigrationState
 import io.github.xororz.localdream.data.db.AppDatabase
 import io.github.xororz.localdream.service.BackgroundGenerationService
+import io.github.xororz.localdream.utils.BackendAuth
 import io.github.xororz.localdream.utils.PrivacySettings
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -28,6 +29,7 @@ class LocalDreamApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        BackendAuth.init(this)
         startMigration()
         // "Don't keep history": every fresh start (after the app was swiped
         // away from Recents, killed or rebooted) begins with an empty history.

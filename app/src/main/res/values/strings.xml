@@ -11,6 +11,7 @@
     <string name="capture_logs_hint">Collect app logs while a model is running, then show them after you exit</string>
     <string name="listen_on_all_addresses">Allow LAN access</string>
     <string name="listen_on_all_addresses_hint">Let other devices on the same network reach the backend (port 8081). Off = local only.</string>
+    <string name="lan_access_code">Access code for other devices: %1$s</string>
     <string name="secure_screen">Screenshot protection</string>
     <string name="secure_screen_hint">Block screenshots and screen recording, and hide the app preview in Recents</string>
     <string name="forget_history">Don\'t keep history</string>
@@ -492,6 +493,11 @@
     <string name="remote_banner_offline">Host unreachable</string>
     <string name="remote_select_failed">Failed to start the model on the host</string>
     <string name="remote_port_hint">Default control port: %1$d. Use address:port to override.</string>
+    <string name="remote_access_code">Access code</string>
+    <string name="remote_access_code_hint">A controller has to enter this code. Without it, neither the control port nor the generation port answers, so other apps and other devices on the network cannot use this device.</string>
+    <string name="remote_access_code_regenerate">Create new code (unpairs all controllers)</string>
+    <string name="remote_access_code_field">Access code from the host</string>
+    <string name="remote_connect_failed_code">The host rejected the access code. Check the code shown on the host.</string>
     <string name="remote_host_notify_title">Host mode active</string>
     <string name="remote_host_notify">Local Dream can be controlled from your local network</string>
     <string name="remote_screen_shield">Black screen (stay awake)</string>
